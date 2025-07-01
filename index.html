@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <!--
 	Forty by HTML5 UP
@@ -12,6 +13,84 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+  .dark-mode {
+    background-color: #1a1a1a;
+    color: #eee;
+  }
+
+  #jq-enhancements button {
+    margin: 10px;
+    padding: 12px 18px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+
+  #jq-enhancements p:hover {
+    color: orange;
+  }
+
+	.banner-photo {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+
+  .banner-photo:hover {
+    box-shadow: 0 0 25px #90D5FF;
+    transform: scale(1.05);
+  }
+	 .intro-text {
+    background-color: #e6f7ff; /* very light blue */
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .intro-text:hover {
+    background-color: #d4f0ff; /* slightly darker on hover */
+  }
+
+  .intro-text h1 {
+    margin-top: 0;
+  }
+
+	.typing {
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  color: #fff; /* Change based on your theme */
+}
+/* Contact Section Enhancements */
+#contact .fields .field input[type="text"],
+#contact .fields .field textarea {
+  border: 2px solid #90D5FF; /* light blue border */
+  background-color: #f8fcff; /* very light blue background */
+  border-radius: 6px;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+/* Always visible styling for inputs and textarea */
+#contact .fields .field input[type="text"],
+#contact .fields .field textarea {
+  border: 2px solid #90D5FF; /* light blue border */
+  background-color: #f0faff; /* soft light blue background */
+  border-radius: 6px;
+  padding: 10px;
+  color: #000;
+}
+
+/* Contact Info Cards (Email, Phone, Address) */
+.contact-ethod {
+  border: 2px solid #90D5FF;
+  background-color: #b2def4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(144, 213, 255, 0.5); /* soft glow */
+  transform: scale(1.02); /* slightly enlarged */
+}
+
+
+</style>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -49,17 +128,20 @@
     <!-- Image on the Left -->
     <div style="flex: 1; text-align: center;">
       <img src="images/om.jpg" alt="Om Kumar"
-           width="200" height="250"
-           style="object-fit: cover; border-radius: 8px; box-shadow: 0 0 10px rgba(255,255,255,0.3);">
-    </div>
+     class="banner-photo"
+     width="200" height="250"
+     style="object-fit: cover; border-radius: 8px;">
 
-    <!-- Text on the Right -->
+    </div>
+<!-- Text on the Right -->
     <div style="flex: 2;">
       <header class="major">
-        <h1>Hi, I'm Om Kumar</h1>
+       <h1 id="typed-heading" style="object-fit: cover; border-radius: 8px; color: white;"></h1>
+
       </header>
       <p>A passionate Information Technology student with experience in backend development, system design, and web technologies.<br />
       Always curious to build impactful tech solutions.</p>
+   
       
 			<ul class="actions" style="display: flex; gap: 10px; flex-wrap: wrap;">
  
@@ -89,7 +171,8 @@
 									</span>
 									<header class="major">
 										<h3><a href="Education.html" class="link">Education</a></h3>
-										<p>My academic foundation in Information Technology and technical skills</p>
+										<p id="typing-para"></p>
+
 									</header>
 								</article>
 
@@ -100,7 +183,8 @@
 									</span>
 								<header class="major">
   <h3><a href="Experience.html" class="link">Experience</a></h3>
-  <p>Hands-on internships and industrial training in software development.</p>
+ <p id="typing-experience"></p>
+
 </header>
 
 								</article>
@@ -112,7 +196,8 @@
 									</span>
 									<header class="major">
   <h3><a href="Skills.html" class="link">Skills</a></h3>
-  <p>Proficient in frontend, backend, and core programming technologies with practical development experience.</p>
+ <p id="typing-skill" class="typing"></p>
+
 </header>
 
 								</article>
@@ -125,7 +210,8 @@
 									</span>
 									<header class="major">
   <h3><a href="project.html" class="link">Projects</a></h3>
-  <p>Real-world web and software development projects built with HTML, CSS, JavaScript, Django, and DSA logic.</p>
+ <p id="typing-project" class="typing"></p>
+
 </header>
 
 								</article>
@@ -139,7 +225,8 @@
 
 
   <h3><a href="contact.html" class="link">Contact</a></h3>
-  <p>Feel free to reach out for collaboration, queries, or opportunities.</p>
+ <p id="typing-contact" class="typing"></p>
+
 </header>
 
 								</article>
@@ -151,7 +238,8 @@
 									</span>
 									<header class="major">
   <h3><a href="about.html" class="link">About me </a></h3>
-  <p>I’m Om Kumar, a Computer Science student passionate about building scalable web applications and backend systems. I'm currently working as a Graduate Engineer Trainee at Mantra Softech and love turning complex problems into clean code and smart solutions.</p></p>
+  <p id="typing-about" class="typing"></p>
+
 </header>
 </article>
 </section>
@@ -180,7 +268,8 @@
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><a href="mailto:om3543880@gmail.com" class="button primary">Send Message</a></li>
+
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
@@ -190,7 +279,8 @@
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="om3543880@gmail.com">om3543880@gmail.com</a>
+									<a href="mailto:om3543880@gmail.com">om3543880@gmail.com</a>
+
 									</div>
 								</section>
 								<section>
@@ -240,6 +330,16 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/custom.js"></script>
+			 <script src="assets/js/typing.js"></script>
+
+
+			
+
+ 
+ 
+
+
 
 	</body>
 </html>

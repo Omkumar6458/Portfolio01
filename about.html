@@ -42,6 +42,64 @@
       padding-left: 20px;
       list-style-type: disc;
     }
+    <style>
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    transition: 0.3s ease;
+  }
+
+  .about-section:hover {
+    box-shadow: 0 0 20px #90D5FF;
+    transform: scale(1.01);
+  }
+
+  .about-photo img {
+    max-width: 220px;
+    border-radius: 50%;
+    border: 4px solid #90D5FF;
+    box-shadow: 0 0 15px #90D5FF;
+    transition: 0.3s ease;
+  }
+
+  .about-photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #90D5FF;
+  }
+
+  .about-text {
+    max-width: 600px;
+    padding: 20px;
+    color: #ddd;
+  }
+
+  .about-text h2 {
+    color: #fff;
+  }
+
+  .about-text ul li a:hover {
+    color: #90D5FF !important;
+    text-decoration: underline;
+  }
+  /*
+  #about-typing-heading::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+*/
+</style>
+
   </style>
 </head>
 <body class="is-preload">
@@ -75,7 +133,8 @@
           <img src="images/om.jpg" alt="Om Kumar">
         </div>
         <div class="about-text">
-          <h2>About Me</h2>
+       <h2 id="about-typing-heading"></h2>
+
           <p>I'm Om Kumar, a passionate Information Technology student currently working as a Graduate Engineer Trainee at Mantra Softech Pvt. Ltd. in the Software Products Department.</p>
           <p>I enjoy solving real-world problems using backend development, system design, and full-stack technologies. I focus on writing clean, maintainable code and constantly learning to improve system performance and scalability.</p>
     
@@ -118,6 +177,10 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/typing.js"></script> <!-- or whatever your JS file is -->
+
 
 </body>
 </html>

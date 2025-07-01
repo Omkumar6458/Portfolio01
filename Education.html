@@ -74,6 +74,17 @@
     .edu-content a:hover {
       text-decoration: underline;
     }
+
+  .skill-box {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+.edu-item {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
   </style>
 	<body class="is-preload">
 
@@ -109,10 +120,11 @@
 						<section id="banner" class="major">
      <div class="inner">
   <header class="major">
-    <h1>My Education Journey</h1>
+   <h1 id="edu-typing-heading" style="color: white;"></h1>
+
   </header>
   <div class="content">
-    <p>From learning the fundamentals to building real-world applications, my education has shaped my passion for technology.<br />
+    <p >From learning the fundamentals to building real-world applications, my education has shaped my passion for technology.<br />
     Explore the institutions and experiences that built my foundation in Computer Science.</p>
     <ul class="actions">
       <li><a href="#education" class="button next scrolly">Explore Education</a></li>
@@ -126,9 +138,9 @@
     <section id="education" class="edu-section">
      <h2>My Academic Journey</h2>
 
-      <div class="edu-item">
+      <div class="edu-item" >
         <img src="images\mit.jpg" alt="MIT Muzaffarpur">
-        <div class="edu-content">
+        <div class="edu-content" class= "skill-box">
           <h3>Muzaffarpur Institute of Technology, Muzaffarpur</h3>
           <p>&rarr; Affiliated To Bihar Engineering University | BEU</p>
           <p>&rarr; Bachelor of Technology | IT</p>
@@ -138,9 +150,9 @@
         </div>
       </div>
 
-      <div class="edu-item">
+      <div class="edu-item"  >
         <img src="images\pnps.jpg" alt="Kunwar Singh College">
-        <div class="edu-content">
+        <div class="edu-content"  class= "skill-box" >
           <h3>PNPS SCHOOL , SASARAM</h3>
           <p>&rarr; Affiliated To CBSE BOARD</p>
           <p>&rarr; Intermediate of Science | PCM</p>
@@ -152,7 +164,7 @@
 
       <div class="edu-item">
         <img src="images/dav.jpeg" alt="DAV Public School Admapur">
-        <div class="edu-content">
+        <div class="edu-content"class= "skill-box" >
           <h3>D.A.V. Public School, Admapur</h3>
           <p>&rarr; Affiliated To Central Board of Secondary Education | CBSE</p>
           <p>&rarr; Class 10th | General Curriculum</p>
@@ -196,6 +208,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+     <script src="assets/js/custom.js"></script>
+     <script src="assets/js/typing.js"></script>
+
 
 	</body>
 </html>

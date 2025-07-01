@@ -12,6 +12,46 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+  /* Smooth transition for contact boxes */
+  .contact-method {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .contact-method:hover {
+    box-shadow: 0 0 15px #90D5FF;
+    transform: scale(1.02);
+  }
+
+  /* Input and textarea focus effect */
+  input[type="text"],
+  textarea {
+    transition: 0.3s ease;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #90D5FF;
+    box-shadow: 0 0 5px #90D5FF;
+    outline: none;
+  }
+
+  /* Button hover effect */
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #90D5FF;
+    color: #fff;
+    cursor: pointer;
+  }
+</style>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -52,6 +92,9 @@
 					
 				<!-- Contact -->
 					<section id="contact">
+						<header class="major">
+  <h1 id="typing-contact"></h1>
+</header>
 						<div class="inner">
 							<section>
 								<form method="post" action="#">
@@ -128,6 +171,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/custom.js"></script>
+		
+			 <script src="assets/js/typing.js"></script>
 
 	</body>
 </html>

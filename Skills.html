@@ -75,6 +75,12 @@
     .edu-content a:hover {
       text-decoration: underline;
     }
+
+     .skill-box {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+
   </style>
 	<body class="is-preload">
 
@@ -93,12 +99,12 @@
 					<nav id="menu">
 								<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Education</a></li>
-							<li><a href="generic.html">Experience</a></li>
-							<li><a href="elements.html">Skills</a></li>
-							<li><a href="landing.html">Projects</a></li>
+							<li><a href="Education.html">Education</a></li>
+							<li><a href="Experience.html">Experience</a></li>
+							<li><a href="Skills.html">Skills</a></li>
+							<li><a href="project.html">Projects</a></li>
 							<li><a href="about.html">About me</a></li>
-							<li><a href="elements.html">Contact</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 						<ul class="actions stacked">
 							<li><a href="#" class="button primary fit">Get Started</a></li>
@@ -113,13 +119,14 @@
 <section id="banner" class="major">
   <div class="inner">
     <header class="major">
-      <h1>My Technical Skills</h1>
+    <h1 id="typing-skills"></h1>
+
     </header>
     <div class="content">
       <p>Over the years, I have developed a strong foundation in frontend, backend, and programming technologies.<br />
       Explore the tools and languages I use to build modern, scalable web applications.</p>
       <ul class="actions">
-        <li><a href="#skills" class="button next scrolly">Explore Skills</a></li>
+        <li><a href="#skills"  class="button next scrolly" class= "skill-box" >Explore Skills</a></li>
       </ul>
     </div>
   </div>
@@ -138,7 +145,7 @@
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1200px; margin: auto;">
     
     <!-- Frontend -->
-    <div style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
+    <div class= "skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
       <h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Frontend Technology</h3>
       <ul style="list-style: none; padding-left: 0;">
         <li>&rarr; HTML5</li>
@@ -150,7 +157,7 @@
     </div>
 
     <!-- Backend -->
-    <div style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
+    <div class= "skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
       <h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Backend Technology</h3>
       <ul style="list-style: none; padding-left: 0;">
         <li>&rarr; Django</li>
@@ -161,7 +168,7 @@
     </div>
 
     <!-- Programming -->
-    <div style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
+    <div class= "skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
       <h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Programming Languages</h3>
       <ul style="list-style: none; padding-left: 0;">
         <li>&rarr; Java</li>
@@ -172,7 +179,7 @@
     </div>
 
     <!-- Backend (2nd Box) -->
-    <div style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
+    <div class= "skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
       <h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Additional Backend Tools</h3>
       <ul style="list-style: none; padding-left: 0;">
         <li>&rarr; Git & GitHub</li>
@@ -221,6 +228,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script src="assets/js/typing.js"></script>
+
 
 	</body>
 </html>
