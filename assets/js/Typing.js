@@ -178,20 +178,6 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
-  const text = "Feel free to reach out for collaboration, queries, or opportunities.";
-  let i = 0;
-
-  function typeContact() {
-    if (i < text.length) {
-      $('#typing-contact').append(text.charAt(i));
-      i++;
-      setTimeout(typeContact, 40); // typing speed
-    }
-  }
-
-  typeContact();
-});
 
 $(document).ready(function () {
   const aboutText = "I’m Om Kumar, a Computer Science student passionate about building scalable web applications and backend systems. I'm currently working as a Graduate Engineer Trainee at Mantra Softech and love turning complex problems into clean code and smart solutions.";
