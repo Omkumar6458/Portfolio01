@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE HTML>
 <!--
 	Forty by HTML5 UP
@@ -13,224 +12,229 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.edu-section {
+				max-width: 1000px;
+				margin: 60px auto;
+				padding: 30px;
+				background: #222;
+				border-radius: 10px;
+				box-shadow: 0 0 20px rgba(255,255,255,0.1);
+			}
+			.edu-section h2 {
+				text-align: center;
+				font-size: 28px;
+				color: #fff;
+			}
+			.edu-section .quote {
+				text-align: center;
+				font-style: italic;
+				color: #bbb;
+				margin-bottom: 40px;
+			}
+			.edu-item {
+				display: flex;
+				background: #333;
+				border-radius: 10px;
+				margin-bottom: 30px;
+				overflow: hidden;
+			}
+			.edu-item img {
+				width: 250px;
+				height: auto;
+				object-fit: cover;
+			}
+			.edu-content {
+				padding: 20px;
+			}
+			.edu-content h3 {
+				margin-top: 0;
+				color: #fff;
+			}
+			.edu-content p {
+				margin: 6px 0;
+				color: #ddd;
+			}
+			.edu-content a {
+				color: #1e90ff;
+				text-decoration: none;
+			}
+			.edu-content a:hover {
+				text-decoration: underline;
+			}
+			.skill-box {
+				transition: background-color 0.3s ease, transform 0.3s ease;
+				cursor: pointer;
+			}
+			.cube-logo {
+				width: 60px;
+				height: 60px;
+				animation: pulse 2s infinite ease-in-out;
+			}
+			@keyframes pulse {
+				0% { transform: scale(1); opacity: 0.8; }
+				50% { transform: scale(1.1); opacity: 1; }
+				100% { transform: scale(1); opacity: 0.8; }
+			}
+			.tech-logo-row {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 30px;
+				margin-top: 20px;
+				flex-wrap: wrap;
+			}
+			.cube-logo:hover {
+				transform: scale(1.2);
+			}
+
+      .skills-heading {
+  text-align: center;
+  color: #fff;
+  border: 2px solid #90D5FF;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #90D5FF;
+  transition: all 0.3s ease;
+}
+
+.skills-heading:hover {
+  background-color: rgba(144, 213, 255, 0.1);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #90D5FF;
+}
+
+		</style>
 	</head>
-<header id="header">
-						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-</header>
-
-
-
-
-
-  <style>
-    .edu-section {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 30px;
-      background: #222;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.1);
-    }
-    .edu-section h2 {
-      text-align: center;
-      font-size: 28px;
-      color: #fff;
-    }
-    .edu-section .quote {
-      text-align: center;
-      font-style: italic;
-      color: #bbb;
-      margin-bottom: 40px;
-    }
-    .edu-item {
-      display: flex;
-      background: #333;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      overflow: hidden;
-    }
-    .edu-item img {
-      width: 250px;
-      height: auto;
-      object-fit: cover;
-    }
-    .edu-content {
-      padding: 20px;
-    }
-    .edu-content h3 {
-      margin-top: 0;
-      color: #fff;
-    }
-    .edu-content p {
-      margin: 6px 0;
-      color: #ddd;
-    }
-    .edu-content a {
-      color: #1e90ff;
-      text-decoration: none;
-    }
-    .edu-content a:hover {
-      text-decoration: underline;
-    }
-
-     .skill-box {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
-  }
-
-  </style>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo"><strong>Om Kumar</strong> <span>Portfolio</span></a>
+				<nav><a href="#menu">Menu</a></nav>
+			</header>
 
-				<!-- Header -->
-					<header id="header">
-					<a href="index.html" class="logo"><strong>Om Kumar</strong> <span>Portfolio</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+			<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Education.html">Education</a></li>
+					<li><a href="Experience.html">Experience</a></li>
+					<li><a href="Skills.html">Skills</a></li>
+					<li><a href="project.html">Projects</a></li>
+					<li><a href="about.html">About me</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
 
-				<!-- Menu -->
-					<nav id="menu">
-								<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="Education.html">Education</a></li>
-							<li><a href="Experience.html">Experience</a></li>
-							<li><a href="Skills.html">Skills</a></li>
-							<li><a href="project.html">Projects</a></li>
-							<li><a href="about.html">About me</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main" class="alt">
-
-						<!-- One -->
-<section id="banner" class="major">
-  <div class="inner">
-    <header class="major">
-    <h1 id="typing-skills"></h1>
-
-    </header>
-    <div class="content">
-      <p>Over the years, I have developed a strong foundation in frontend, backend, and programming technologies.<br />
-      Explore the tools and languages I use to build modern, scalable web applications.</p>
-      <ul class="actions">
-        <li><a href="#skills"  class="button next scrolly" class= "skill-box" >Explore Skills</a></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-    <!-- Education Section -->
-
-
-
-     <!-- Skills Section -->
-<section id="skills" style="background:#222; padding: 60px 0;">
-  <h2 style="text-align:center; color:#fff;">My Skills</h2>
-  <p style="text-align:center; color:#bbb; font-style:italic; margin-bottom: 40px;">A balanced set of technologies across frontend, backend, and programming.</p>
-
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1200px; margin: auto;">
-    
-    <!-- Frontend -->
-    <div class= "skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
-      <h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Frontend Technology</h3>
-      <ul style="list-style: none; padding-left: 0;">
-        <li>&rarr; HTML5</li>
-        <li>&rarr; CSS3</li>
-        <li>&rarr; JavaScript</li>
-        <li>&rarr; Bootstrap</li>
-        <li>&rarr; Tailwind CSS</li>
-      </ul>
-    </div>
-
-    <!-- Backend -->
-    <div class= "skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
-      <h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Backend Technology</h3>
-      <ul style="list-style: none; padding-left: 0;">
-        <li>&rarr; Django</li>
-        <li>&rarr; REST APIs</li>
-        <li>&rarr; SQLite</li>
-        <li>&rarr; MySQL</li>
-      </ul>
-    </div>
-
-    <!-- Programming -->
-    <div class= "skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
-      <h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Programming Languages</h3>
-      <ul style="list-style: none; padding-left: 0;">
-        <li>&rarr; Java</li>
-        <li>&rarr; Python</li>
-        <li>&rarr; C++</li>
-        <li>&rarr; JavaScript</li>
-      </ul>
-    </div>
-
-    <!-- Backend (2nd Box) -->
-    <div class= "skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
-      <h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Additional Backend Tools</h3>
-      <ul style="list-style: none; padding-left: 0;">
-        <li>&rarr; Git & GitHub</li>
-        <li>&rarr; Postman</li>
-        <li>&rarr; Deployment Basics</li>
-        <li>&rarr; System Design</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-					</div>
-
-				
-
-				<!-- Footer -->
-         <footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://x.com/Omkumar1947490" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://github.com/Omkumar6458" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/om-kumar-b45152232/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								
-
-
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">Om kumar</a></li>
+			<!-- Main -->
+			<div id="main" class="alt">
+				<!-- Banner -->
+				<section id="banner" class="major">
+					<div class="inner">
+						<header class="major">
+							<h1 id="typing-skills"></h1>
+						</header>
+						<div class="tech-logo-row">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="cube-logo" />
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="cube-logo" />
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="cube-logo" />
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="cube-logo" />
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" class="cube-logo" />
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="cube-logo" />
+						</div>
+						<div class="content">
+							<ul class="actions">
+								<li><a href="#skills" class="button next scrolly skill-box">Explore Skills</a></li>
 							</ul>
 						</div>
-					</footer>
+					</div>
+				</section>
 
-					
+				<!-- Skills Section -->
+				<section id="skills" style="background:#222; padding: 60px 0;">
+
+
+					<p style =" text-align: center;
+  color: #fff;
+  border: 2px solid #90D5FF;
+
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px #90D5FF;
+  background-color: transparent;
+  ">A balanced set of technologies across frontend, backend, and programming.</p>
+					<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1200px; margin: auto;">
+						<!-- Frontend -->
+						<div class="skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
+							<h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Frontend Technology</h3>
+							<ul style="list-style: none; padding-left: 0;">
+								<li>&rarr; HTML5</li>
+								<li>&rarr; CSS3</li>
+								<li>&rarr; JavaScript</li>
+								<li>&rarr; Bootstrap</li>
+								<li>&rarr; Tailwind CSS</li>
+							</ul>
+						</div>
+						<!-- Backend -->
+						<div class="skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
+							<h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Backend Technology</h3>
+							<ul style="list-style: none; padding-left: 0;">
+								<li>&rarr; Django</li>
+								<li>&rarr; REST APIs</li>
+								<li>&rarr; SQLite</li>
+								<li>&rarr; MySQL</li>
+							</ul>
+						</div>
+						<!-- Programming -->
+						<div class="skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
+							<h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Programming Languages</h3>
+							<ul style="list-style: none; padding-left: 0;">
+								<li>&rarr; Java</li>
+								<li>&rarr; Python</li>
+								<li>&rarr; C++</li>
+								<li>&rarr; JavaScript</li>
+							</ul>
+						</div>
+						<!-- Backend (2nd Box) -->
+						<div class="skill-box" style="flex: 1 1 220px; background:#333; color:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.1);">
+							<h3 style="border-bottom:1px solid #444; padding-bottom:10px;">Additional Backend Tools</h3>
+							<ul style="list-style: none; padding-left: 0;">
+								<li>&rarr; Git & GitHub</li>
+								<li>&rarr; Postman</li>
+								<li>&rarr; Deployment Basics</li>
+								<li>&rarr; System Design</li>
+							</ul>
+						</div>
+					</div>
+				</section>
 			</div>
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://x.com/Omkumar1947490" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/Omkumar6458" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/om-kumar-b45152232/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">Om kumar</a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-      <script src="assets/js/custom.js"></script>
-      <script src="assets/js/Typing.js"></script>
-
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/Typing.js"></script>
 	</body>
 </html>

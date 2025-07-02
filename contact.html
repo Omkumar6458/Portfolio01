@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE HTML>
 <!--
 	Forty by HTML5 UP
@@ -36,20 +38,18 @@
     background-color: #fff;
   }
 
-  input[type="text"]:focus,
-  textarea:focus {
-    border-color: #90D5FF;
-    box-shadow: 0 0 5px #90D5FF;
-    outline: none;
-  }
+input[type="text"],
+input[type="email"],
+textarea {
+  transition: 0.3s ease;
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
+  background-color: #fff;
+  color: #000; /* Make typed text visible */
+}
 
-  /* Button hover effect */
-  input[type="submit"]:hover,
-  input[type="reset"]:hover {
-    background-color: #90D5FF;
-    color: #fff;
-    cursor: pointer;
-  }
+  
 </style>
 
 	<body class="is-preload">
@@ -97,26 +97,28 @@
 </header>
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
+								<form method="POST" action="https://formspree.io/f/meoknywg">
+  <input type="hidden" name="_subject" value="New message from your portfolio!">
+  <div class="fields">
+    <div class="field half">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+    </div>
+    <div class="field half">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="6" required></textarea>
+    </div>
+  </div>
+  <ul class="actions">
+    <li><input type="submit" value="Send Message" class="primary" /></li>
+    <li><input type="reset" value="Clear" /></li>
+  </ul>
+</form>
+
 							</section>
 							<section class="split">
 								<section>

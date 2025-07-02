@@ -98,7 +98,7 @@ $(document).ready(function () {
   }
 
   // Call typing effect on Contact heading
-  typeEffect("#typing-contact", "Contact Me");
+  typeEffect("#typing-contact", " Great ideas begin with a simple conversation.");
 });
 
 
@@ -146,7 +146,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  const text = "Proficient in frontend, backend, and core programming technologies with practical development experience.";
+  const text = "Skills aren’t just tools — they’re the bridge between ideas and execution. I keep sharpening mine to turn concepts into code and solutions into impact.";
   let i = 0;
 
   function typeText() {
@@ -162,7 +162,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-  const text = "Real-world web and software development projects built with HTML, CSS, JavaScript, Django, and DSA logic.";
+  const text = "Education isn’t just about degrees — it’s about building the mindset to solve, adapt, and innovate.";
   let i = 0;
 
   function typeLine() {
@@ -180,7 +180,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-  const aboutText = "I’m Om Kumar, a Computer Science student passionate about building scalable web applications and backend systems. I'm currently working as a Graduate Engineer Trainee at Mantra Softech and love turning complex problems into clean code and smart solutions.";
+  const aboutText = "I don’t just write code — I design logic, build systems, and learn every day to shape ideas into reality.";
   let index = 0;
 
   function typeAbout() {
