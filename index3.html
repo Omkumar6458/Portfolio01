@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Om Kumar Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/effect.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .dark-mode { background-color: #1a1a1a; color: #eee; }
+
+    .banner-photo {
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    .banner-photo:hover {
+      box-shadow: 0 0 25px #90D5FF;
+      transform: scale(1.05);
+    }
+
+    .intro-text {
+      background-color: #e6f7ff;
+      padding: 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .intro-text:hover { background-color: #d4f0ff; }
+
+    .section-navbar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      background-color: #1a1a1a;
+      padding: 15px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      margin-top: 20px;
+      border-radius: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .section-navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .section-navbar a:hover {
+      background-color: #0077b6;
+      color: white;
+    }
+  </style>
+</head>
+<body class="is-preload">
+
+  <div id="wrapper">
+
+    <!-- Banner with Image and Intro -->
+    <!-- ... (unchanged content above navbar) ... -->
+
+    <!-- Navigation Bar -->
+    <div class="section-navbar">
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ... (rest of the sections stay the same) ... -->
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/Typing.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.section-navbar a').on('click', function(e) {
+        e.preventDefault();
+        var target = $($(this).attr('href'));
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 70
+          }, 800);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,446 @@
+
+
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+			<link rel="stylesheet" href="assets/css/main.css"/>
+				<link rel="stylesheet" href="assets/css/effect.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<style>
+  .dark-mode {
+    background-color: #1a1a1a;
+    color: #eee;
+  }
+
+  #jq-enhancements button {
+    margin: 10px;
+    padding: 12px 18px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+
+  #jq-enhancements p:hover {
+    color: orange;
+  }
+
+	.banner-photo {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+
+  .banner-photo:hover {
+    box-shadow: 0 0 25px #90D5FF;
+    transform: scale(1.05);
+  }
+	 .intro-text {
+    background-color: #e6f7ff; /* very light blue */
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .intro-text:hover {
+    background-color: #d4f0ff; /* slightly darker on hover */
+  }
+
+  .intro-text h1 {
+    margin-top: 0;
+  }
+
+	.typing {
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  color: #fff; /* Change based on your theme */
+}
+/* Contact Section Enhancements */
+#contact .fields .field input[type="text"],
+#contact .fields .field textarea {
+  border: 2px solid #90D5FF; /* light blue border */
+  background-color: #f8fcff; /* very light blue background */
+  border-radius: 6px;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+/* Always visible styling for inputs and textarea */
+#contact .fields .field input[type="text"],
+#contact .fields .field textarea {
+  border: 2px solid #90D5FF; /* light blue border */
+  background-color: #f0faff; /* soft light blue background */
+  border-radius: 6px;
+  padding: 10px;
+  color: #000;
+}
+
+/* Contact Info Cards (Email, Phone, Address) */
+.contact-ethod {
+  border: 2px solid #90D5FF;
+  background-color: #b2def4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(144, 213, 255, 0.5); /* soft glow */
+  transform: scale(1.02); /* slightly enlarged */
+}
+
+
+ .social-cube-container {
+      position: absolute;
+      top: 40px;
+      left: 20px;
+      width: 70px;
+      height: 70px;
+      perspective: 800px;
+      z-index: 1000;
+    }
+
+    .social-cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: spinCube 10s infinite linear;
+    }
+
+    .social-face {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: #d0f0ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #90d5ff;
+      border-radius: 10px;
+    }
+
+    .social-face img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .front  { transform: translateZ(35px); }
+    .back   { transform: rotateY(180deg) translateZ(35px); }
+    .right  { transform: rotateY(90deg) translateZ(35px); }
+    .left   { transform: rotateY(-90deg) translateZ(35px); }
+    .top    { transform: rotateX(90deg) translateZ(35px); }
+    .bottom { transform: rotateX(-90deg) translateZ(35px); }
+
+    @keyframes spinCube {
+      0%   { transform: rotateX(0) rotateY(0); }
+      100% { transform: rotateX(360deg) rotateY(360deg); }
+    }
+
+
+
+
+</style>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Om Kumar</strong> <span>Portfolio</span></a>
+
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Education.html">Education</a></li>
+							<li><a href="Experience.html">Experience</a></li>
+							<li><a href="Skills.html">Skills</a></li>
+							<li><a href="project.html">Projects</a></li>
+							<li><a href="about.html">About me</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<ul class="actions stacked">
+						
+						</ul>
+					</nav>
+
+      	<!-- Banner -->
+<section id="banner" class="major">
+  <div class="inner" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+
+    <!-- Image on the Left -->
+    <div style="flex: 1; text-align: center;">
+      <img src="images/om.jpg" alt="Om Kumar"
+     class="banner-photo"
+     width="200" height="250"
+     style="object-fit: cover; border-radius: 8px;">
+
+    </div>
+<!-- Text on the Right -->
+    <div style="flex: 2;">
+      <header class="major">
+       <h1 id="typed-heading" style="object-fit: cover; border-radius: 8px; color: white;"></h1>
+
+      </header>
+      <p>A passionate Information Technology student with experience in backend development, system design, and web technologies.<br />
+      Always curious to build impactful tech solutions.</p>
+   
+      
+			<ul class="actions" style="display: flex; gap: 10px; flex-wrap: wrap;">
+ 
+  <li><a href="#one" class="button next scrolly">View My Work</a></li>
+  <a href="assets/om_resume2.pdf" target="_blank" class="button primary">
+  <i class="fas fa-file-pdf"></i> View & Download Resume
+</a>
+
+
+</ul>
+
+    </div>
+
+
+  </div>
+</section>
+
+
+
+<!-- Main -->
+      <div id="main">
+
+  <!-- Tiles Section -->
+  <section id="one" class="tiles">
+
+    <!-- About Me -->
+    <article>
+      <span class="image">
+        <img src="images/pic04.jpg" alt="About" />
+      </span>
+      <header class="major">
+      <h3 class="jumble-drop">
+  <a href="about.html" class="link">
+    <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>&nbsp;<span>M</span><span>e</span>
+  </a>
+</h3>
+
+        <p id="typing-about" class="typing"></p>
+      </header>
+    </article>
+
+    <!-- Skills -->
+    <article>
+      <span class="image">
+        <img src="images/pic03.jpg" alt="Skills" />
+      </span>
+      <header class="major">
+        <h3 class="jumble-drop">
+  <a href="Skills.html" class="link">
+    <span>S</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span>
+  </a>
+</h3>
+
+        <p id="typing-skill" class="typing"></p>
+      </header>
+    </article>
+
+    <!-- Education -->
+    <article>
+      <span class="image">
+        <img src="images/pic01.jpg" alt="Education" />
+      </span>
+      <header class="major">
+       <h3 class="jumble-drop">
+  <a href="Education.html" class="link">
+    <span>E</span><span>d</span><span>u</span><span>c</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span>
+  </a>
+</h3>
+
+        <p id="typing-para"></p>
+      </header>
+    </article>
+
+    <!-- Experience -->
+    <article>
+      <span class="image">
+        <img src="images/pic02.jpg" alt="Experience" />
+      </span>
+      <header class="major">
+       <h3 class="jumble-drop">
+  <a href="Experience.html" class="link">
+    <span>E</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span>
+  </a>
+</h3>
+
+        <p id="typing-experience"></p>
+      </header>
+    </article>
+
+    <!-- Projects -->
+    <article>
+      <span class="image">
+        <img src="images/pic04.jpg" alt="Projects" />
+      </span>
+      <header class="major">
+      <h3 class="jumble-drop">
+  <a href="project.html" class="link">
+    <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span>
+  </a>
+</h3>
+
+        <p id="typing-project" class="typing"></p>
+      </header>
+    </article>
+
+    <!-- Contact -->
+    <article>
+      <span class="image">
+        <img src="images/pic05.jpg" alt="Contact" />
+      </span>
+      <header class="major">
+        <h3 class="jumble-drop">
+  <a href="contact.html" class="link">
+    <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+  </a>
+</h3>
+
+        <p id="typing-contact" class="typing"></p>
+      </header>
+    </article>
+
+  </section>
+
+  <!-- Contact Section -->
+ <!---<section id="contact">
+    <div class="inner">
+      <section>
+        <form method="POST" action="https://formspree.io/f/meoknywg">
+          <input type="hidden" name="_subject" value="New message from your portfolio!">
+          <div class="fields">
+            <div class="field half">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="field half">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="6" required></textarea>
+            </div>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" class="primary" /></li>
+            <li><input type="reset" value="Clear" /></li>
+          </ul>
+        </form>
+      </section> 
+
+
+      <section class="split">
+        <section>
+          <div class="contact-method">
+            <span class="icon solid alt fa-envelope"></span>
+            <h3>Email</h3>
+            <a href="mailto:om3543880@gmail.com">om3543880@gmail.com</a>
+          </div>
+        </section>
+        <section>
+          <div class="contact-method">
+            <span class="icon solid alt fa-phone"></span>
+            <h3>Phone</h3>
+            <span>7488485340</span>
+          </div>
+        </section>
+        <section>
+          <div class="contact-method">
+            <span class="icon solid alt fa-home"></span>
+            <h3>Address</h3>
+            <span>Sasaram<br />
+              PIN CODE: 821115<br />
+              BIHAR</span>
+          </div>
+        </section>
+      </section>
+    </div>
+  </section>
+</div>
+
+-->
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://x.com/Omkumar1947490" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/Omkumar6458" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/om-kumar-b45152232/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								
+
+
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">Om kumar</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ <div class="social-cube-container">
+    <div class="social-cube">
+      <a href="https://www.linkedin.com/in/om-kumar-b45152232/" class="social-face front" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/Omkumar6458" class="social-face back" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      </a>
+      <a href="https://x.com/Omkumar1947490" class="social-face right" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+      </a>
+      <a href="https://leetcode.com/u/om_6458/" class="social-face left" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode">
+      </a>
+      <a href="mailto:om3543880@gmail.com" class="social-face top">
+        <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail">
+      </a>
+      <div class="social-face bottom">
+        <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Cube">
+      </div>
+    </div>
+  </div>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/custom.js"></script>
+			 <script src="assets/js/Typing.js"></script>
+
+
+			
+
+ 
+ 
+
+
+
+	</body>
+</html>
