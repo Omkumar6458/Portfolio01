@@ -214,25 +214,64 @@ html {
   scroll-behavior: smooth;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #242943;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    z-index: 999;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
 
 </style>
 
 	<body class="is-preload">
 
-
 <nav>
-    <div class="logo">
-      <img src="images/om_photo.jpeg" alt="Om Photo"> <!-- Replace with your own image -->
-      <div class="logo-text">Om Kumar : <small>Developer</small></div>
-    </div>
-    <div class="nav-links">
-      <a href="#banner">Home</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-    </div>
-  </nav>
+  <div class="logo">
+    <img src="images/om_photo.jpeg" alt="Om Photo">
+    <div class="logo-text">Om Kumar : <small>Software Developer</small></div>
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="#banner">Home</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </div>
+</nav>
+
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -904,7 +943,12 @@ html {
 			 <script src="assets/js/Typing.js"></script>
          <script src="assets/js/jq.js"></script>
 
-			
+			<script>
+  $('#menu-toggle').click(function() {
+    $('#nav-links').toggleClass('show');
+  });
+</script>
+
 
  
  
